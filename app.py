@@ -8,5 +8,18 @@ def parallel(resistors):
 parallel([330, 1000, 2200])
 
 def potential_divider(supply_voltage, resistors_value):
-    pass
+
+    total_resistance = 0
+    for resistance in resistors_value:
+        total_resistance += resistance
+    current = supply_voltage/ total_resistance
+    
+    for resistor in resistors_value: 
+        print(f"{round(resistor*current, 2)} V")
+
+
+potential_divider(5, [4, 5])
+
+
+
     
