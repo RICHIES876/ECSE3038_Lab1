@@ -30,6 +30,7 @@ def Temperature_check(temp_val, unit_sign):
     else: 
         print("The Patient is Hyperthermic")
 
+        
 Temperature_check(35, "C")
 
 
